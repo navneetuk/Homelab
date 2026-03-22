@@ -36,3 +36,25 @@
 - Static IPs essential for servers — DHCP only for desktops
 - SSH drops when IP changes — expected behaviour
 - known_hosts file tracks SSH server fingerprints
+
+## Software installed
+- [x] qemu-guest-agent (Proxmox integration)
+- [x] System fully updated (March 2026)
+- [x] UFW firewall active (ports 22, 80, 443 open)
+- [x] Docker 29.3.0 installed
+- [x] Docker Compose v5.1.1 installed
+- [x] hello-world container verified
+- [ ] ARR stack (Phase 3)
+- [ ] Jellyfin media server (Phase 4)
+
+## Docker info
+- Install method: Official Docker repository
+- Compose: Plugin v2 (docker compose not docker-compose)
+- User navneet added to docker group
+- Images stored: /var/lib/docker
+
+## UFW rules
+- 22/tcp  (SSH)   ALLOW
+- 80/tcp  (HTTP)  ALLOW
+- 443/tcp (HTTPS) ALLOW
+- Default: deny incoming, allow outgoing
