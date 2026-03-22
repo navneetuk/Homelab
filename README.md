@@ -1,4 +1,4 @@
-# Navneet Singh — Identity & Security Homelab
+# Identity & Security Homelab
 
 ## Overview
 A hands-on homelab environment documenting my journey 
