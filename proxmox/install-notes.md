@@ -4,7 +4,7 @@
 - Machine: Lenovo ThinkCentre
 - CPU: Intel i7
 - RAM: 64GB DDR4
-- SSD 1 (OS): 500GB — Proxmox installed here
+- SSD 1 (OS): 256GB — Proxmox installed here
 - SSD 2 (Data): 1TB — VM storage, added post-install
 
 ## Installation
@@ -17,7 +17,7 @@
 
 ## Post-install steps completed
 - [x] Secure Boot disabled in BIOS
-- [x] Proxmox VE 8 installed on 500GB SSD
+- [x] Proxmox VE 8 installed on 256GB SSD
 - [x] Hostname: proxmox.homelab.local
 - [x] IP: 192.168.1.101
 - [x] Dual NIC confirmed — NIC2 reserved for pfSense (Phase 6)
