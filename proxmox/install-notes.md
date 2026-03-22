@@ -39,3 +39,12 @@
 - apt update refreshes package list, apt upgrade installs updates
 - Enterprise repos need a paid licence — use community repo for homelab
 - .sources and .list are both valid apt repo file formats
+
+## Storage pools configured
+- local (Directory) — 256GB SSD — ISOs, backups, templates
+- local-lvm (LVM-Thin) — 256GB SSD — fast volumes
+- vm-storage (LVM) — 1TB SSD — all VM disks live here
+
+## Disk layout
+- /dev/nvme0n1 — 256GB — Proxmox OS
+- /dev/nvme1n1 — 1TB — VM storage pool
