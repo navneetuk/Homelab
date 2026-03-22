@@ -48,3 +48,14 @@
 ## Disk layout
 - /dev/nvme0n1 — 256GB — Proxmox OS
 - /dev/nvme1n1 — 1TB — VM storage pool
+
+## Admin user setup
+- Created user: navneet
+- Added to sudo group
+- SSH access confirmed from Dell XPS
+- Root direct login to be avoided going forward
+
+## SSH access
+- Command: ssh navneet@192.168.1.101
+- Port: 22 (default)
+- Auth: password (SSH keys to be added in future)
