@@ -1,5 +1,17 @@
 services:
 
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ${CONFIG_PATH}/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ${CONFIG_PATH}/caddy/data:/data
+      - ${CONFIG_PATH}/caddy/config:/config
+    restart: unless-stopped
+
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:latest
     container_name: prowlarr

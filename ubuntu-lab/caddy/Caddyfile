@@ -1,0 +1,29 @@
+{
+  local_certs
+  auto_https disable_redirects
+}
+
+prowlarr.homelab.local {
+  tls internal
+  reverse_proxy prowlarr:9696
+}
+
+sonarr.homelab.local {
+  tls internal
+  reverse_proxy sonarr:8989
+}
+
+radarr.homelab.local {
+  tls internal
+  reverse_proxy radarr:7878
+}
+
+qbit.homelab.local {
+  tls internal
+  reverse_proxy qbittorrent:8080
+}
+
+jellyfin.homelab.local {
+  tls internal
+  reverse_proxy jellyfin:8096
+}
