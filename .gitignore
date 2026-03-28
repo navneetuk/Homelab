@@ -1,0 +1,23 @@
+# Secrets and credentials
+.env
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+credentials/
+
+# Terraform state (contains secrets)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
