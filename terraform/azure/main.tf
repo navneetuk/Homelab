@@ -18,12 +18,12 @@ resource "azurerm_resource_group" "homelab" {
   name     = var.resource_group_name
   location = var.location
 
-  tags = {
+tags = {
     environment = "homelab"
     owner       = "navneet"
     purpose     = "learning"
+    managed_by  = "terraform"
   }
-}
 
 resource "azurerm_virtual_network" "homelab" {
   name                = "homelab-vnet"
